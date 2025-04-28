@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(193, 255, 234);}
+    /*
+    distribucion de elementos
+    
+    para distribuir items en la grilla usamos grid column y grid row en los items o elementos
+
+    ambas propiedades reciben indices como parametros de inicio y fin.
+    
+    grid column: i-inicio / i-fin
+    grid row: i-inicio / i-fin
+    */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 100vh;
+        background-color: cornflowerblue;
+    }
+    .item{
+        /*grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        background-color: cyan;*/
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .item-1{
+        grid-column: 3 / 5;
+        grid-row: 3 / 5;
+        background-color: yellowgreen;
+    }
+    .item-2{
+        grid-column: 1 / 4;
+        grid-row: 5;
+        background-color: rgb(50, 78, 205);
+    }
+    .item-3{
+        grid-column: 4 / 6;
+        grid-row: 2 / 5;
+        background-color: rgb(140, 50, 205);
+    }
+    .item-4{
+        grid-column: -1 / -3;
+        grid-row: -2;
+        background-color: rgb(205, 109, 50);
+    }
